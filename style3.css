@@ -11,7 +11,7 @@ body {
     line-height: 1.65;
 }
 
-/* ===== HEADER ===== */
+/* header */
 .header {
     background: linear-gradient(135deg, #0d47a1, #1565c0);
     color: white;
@@ -30,7 +30,7 @@ body {
     border-radius: 50%;
     background-color: white;
     padding: 8px;
-    margin-bottom: 12px; /* tạo khoảng cách với chữ */
+    margin-bottom: 12px;
 }
 
 .header h1 {
@@ -45,7 +45,7 @@ body {
 }
 
 
-/* ===== NAV ===== */
+/* nav */
 .nav {
     background-color: #0d47a1;
     box-shadow: 0 3px 10px rgba(0,0,0,0.12);
@@ -66,8 +66,7 @@ body {
     transition: 0.25s;
 }
 
-.nav ul li a:hover,
-.nav ul li a.active {
+.nav ul li a.mark {
     background-color: #1976d2;
 }
 
@@ -76,7 +75,7 @@ body {
     transform: translateY(-3px);
 }
 
-/* MAIN */
+/* main */
 .main {
     max-width: 1200px;
     margin: 40px auto;
@@ -88,7 +87,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* ===== INTRO ===== */
+/* intro */
 .intro {
     background-color: #e3f2fd;
     padding: 32px;
@@ -113,8 +112,8 @@ body {
     border-radius: 2px;
 }
 
-/* CARD */
-.card-list {
+/* card */
+.list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 25px;
@@ -151,40 +150,7 @@ body {
     font-size: 14px;
 }
 
-/* MODAL */
-.modal {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.7);
-    justify-content: center;
-    align-items: center;
-}
-
-.modal-content {
-    background: white;
-    width: 90%;
-    max-width: 800px;
-    border-radius: 12px;
-    padding: 15px;
-    position: relative;
-}
-
-.modal iframe {
-    width: 100%;
-    height: 450px;
-    border: none;
-}
-
-.close {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 28px;
-    cursor: pointer;
-}
-
-/* ===== FOOTER ===== */
+/* footer */
 .footer {
     background: linear-gradient(135deg, #0d47a1, #1565C0);
     color: white;
@@ -198,7 +164,7 @@ body {
     opacity: 0.95;
 }
 
-/* ===== RESPONSIVE ===== */
+/* điện thoại */
 @media (max-width: 768px) {
     .nav ul {
         flex-direction: column;

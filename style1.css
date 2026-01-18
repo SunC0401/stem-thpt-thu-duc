@@ -1,4 +1,3 @@
-/* ===== RESET ===== */
 * {
     margin: 0;
     padding: 0;
@@ -12,15 +11,15 @@ body {
     line-height: 1.65;
 }
 
-/* ===== HEADER ===== */
+/* header */
 .header {
     background: linear-gradient(135deg, #0d47a1, #1565C0);
     color: white;
     text-align: center;
     padding: 50px 20px;
     display: flex;
-    flex-direction: column;   /* QUAN TRỌNG: xếp dọc */
-    align-items: center;      /* canh giữa */
+    flex-direction: column;
+    align-items: center;    
     text-align: center;
 }
 
@@ -31,7 +30,7 @@ body {
     border-radius: 50%;
     background-color: white;
     padding: 8px;
-    margin-bottom: 12px; /* tạo khoảng cách với chữ */
+    margin-bottom: 12px;
 }
 
 .header h1 {
@@ -45,7 +44,7 @@ body {
     opacity: 0.95;
 }
 
-/* ===== NAV ===== */
+/* nav */
 .nav {
     background-color: #0d47a1;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
@@ -66,8 +65,7 @@ body {
     transition: all 0.25s ease;
 }
 
-.nav ul li a:hover,
-.nav ul li a.active {
+.nav ul li a.mark {
     background-color: #1976d2;
 }
 
@@ -76,14 +74,14 @@ body {
     transform: translateY(-3px);
 }
 
-/* ===== MAIN ===== */
+/* main */
 .main {
     max-width: 1100px;
     margin: 40px auto;
     padding: 0 16px;
 }
 
-/* ===== INTRO ===== */
+/* intro */
 .intro {
     background-color: #e3f2fd;
     padding: 32px;
@@ -109,19 +107,19 @@ body {
     border-radius: 2px;
 }
 
-/* ===== LAYOUT (ÉP DỌC) ===== */
+/* layout */
 .layout {
     display: flex;
     flex-direction: column;
 }
 
-/* ===== CONTENT ===== */
+/* content */
 .content {
     display: flex;
     flex-direction: column;
 }
 
-/* ===== SECTION ===== */
+/* section */
 .section {
     background-color: white;
     padding: 30px;
@@ -144,11 +142,10 @@ body {
     border-radius: 2px;
 }
 
-/* ===== SECTION COLOR ===== */
-.section.fields h2 {
+.section.area h2 {
     color: #c40000;
 }
-.section.fields h2::after {
+.section.area h2::after {
     background-color: #c40000;
 }
 
@@ -159,14 +156,14 @@ body {
     background-color: #EF6C00;
 }
 
-/* ===== CARD LIST ===== */
-.card-list {
+/* list */
+.list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 24px;
 }
 
-/* ===== CARD ===== */
+/* card */
 .card {
     padding: 22px;
     border-radius: 14px;
@@ -188,50 +185,62 @@ body {
     color: #444;
 }
 
-/* ===== CARD COLORS ===== */
 .card.science {
     background-color: #e3f2fd;
     border-left: 6px solid #1565C0;
 }
-.card.science h3 { color: #1565C0; }
+.card.science h3 { 
+    color: #1565C0; 
+}
 
-.card.tech {
+.card.technology {
     background-color: #e8f5e9;
     border-left: 6px solid #2E7D32;
 }
-.card.tech h3 { color: #2E7D32; }
+.card.technology h3 { 
+    color: #2E7D32; 
+}
 
 .card.engineering {
     background-color: #fff3e0;
     border-left: 6px solid #EF6C00;
 }
-.card.engineering h3 { color: #EF6C00; }
+.card.engineering h3 { 
+    color: #EF6C00; 
+}
 
-.card.math {
+.card.mathematics {
     background-color: #f3e5f5;
     border-left: 6px solid #6A1B9A;
 }
-.card.math h3 { color: #6A1B9A; }
+.card.mathematics h3 { 
+    color: #6A1B9A; 
+}
 
 .card.project {
     background-color: #e1f5fe;
     border-left: 6px solid #0288D1;
 }
-.card.project h3 { color: #0288D1; }
+
+.card.project h3 { 
+    color: #0288D1; 
+}
 
 .card.event {
     background-color: #ffebee;
     border-left: 6px solid #C62828;
 }
-.card.event h3 { color: #C62828; }
+.card.event h3 { 
+    color: #C62828; 
+}
 
-/* ===== SIDEBAR (NAY LÀ SECTION CUỐI) ===== */
+/* slidebar */
 .sidebar .section {
     background-color: #e3f2fd;
     border-left: 6px solid #1565C0;
 }
 
-/* ===== FOOTER ===== */
+/* footer */
 .footer {
     background: linear-gradient(135deg, #0d47a1, #1565C0);
     color: white;
@@ -245,7 +254,7 @@ body {
     opacity: 0.95;
 }
 
-/* ===== RESPONSIVE ===== */
+/* điện thoại */
 @media (max-width: 768px) {
     .nav ul {
         flex-direction: column;
@@ -261,6 +270,3 @@ body {
         padding: 22px;
     }
 }
-
-
-

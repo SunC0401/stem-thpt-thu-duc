@@ -1,4 +1,3 @@
-/* ===== RESET ===== */
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +11,7 @@ body {
     line-height: 1.65;
 }
 
-/* ===== HEADER ===== */
+/* header */
 .header {
     background: linear-gradient(135deg, #0d47a1, #1565c0);
     color: white;
@@ -31,7 +30,7 @@ body {
     border-radius: 50%;
     background-color: white;
     padding: 8px;
-    margin-bottom: 12px; /* tạo khoảng cách với chữ */
+    margin-bottom: 12px;
 }
 
 .header h1 {
@@ -46,7 +45,7 @@ body {
 }
 
 
-/* ===== NAV ===== */
+/* nav */
 .nav {
     background-color: #0d47a1;
     box-shadow: 0 3px 10px rgba(0,0,0,0.12);
@@ -67,8 +66,7 @@ body {
     transition: 0.25s;
 }
 
-.nav ul li a:hover,
-.nav ul li a.active {
+.nav ul li a.mark {
     background-color: #1976d2;
 }
 
@@ -77,14 +75,14 @@ body {
     transform: translateY(-3px);
 }
 
-/* ===== MAIN ===== */
+/* main */
 .main {
     max-width: 1200px;
     margin: 40px auto;
     padding: 0 16px;
 }
 
-/* ===== INTRO ===== */
+/* intro */
 .intro {
     background-color: #e3f2fd;
     padding: 32px;
@@ -109,7 +107,7 @@ body {
     border-radius: 2px;
 }
 
-/* ===== SECTION ===== */
+/* section */
 .section {
     background-color: white;
     padding: 30px;
@@ -122,14 +120,14 @@ body {
     margin-bottom: 20px;
 }
 
-/* ===== CARD LIST ===== */
-.card-list {
+/* list */
+.list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 26px;
 }
 
-/* ===== CARD ===== */
+/* card */
 .card {
     background-color: #f9fbff;
     border-radius: 14px;
@@ -144,15 +142,15 @@ body {
     box-shadow: 0 14px 30px rgba(0,0,0,0.15);
 }
 
-/* ===== IMAGE ===== */
-.member-image {
+/* image */
+.member {
     height: 200px;
     border-radius: 12px;
     overflow: hidden;
     margin-bottom: 14px;
 }
 
-.member-image img {
+.member img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -174,7 +172,7 @@ body {
     color: #555;
 }
 
-/* ===== FOOTER ===== */
+/* footer */
 .footer {
     background: linear-gradient(135deg, #0d47a1, #1565C0);
     color: white;
@@ -188,7 +186,7 @@ body {
     opacity: 0.95;
 }
 
-/* ===== RESPONSIVE ===== */
+/* điện thoại */
 @media (max-width: 768px) {
     .nav ul {
         flex-direction: column;
